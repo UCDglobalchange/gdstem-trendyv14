@@ -1,0 +1,65 @@
+CXX = g++
+CFLAGS = -O
+
+CLMOBJ = tclm_gds.o  
+
+TEMOBJ = ttem_gds.o atms_gds.o penmon_gds.o tveg_gds.o tmcrb_gds.o \
+tsoil_gds.o humnact_gds.o
+
+ELMNTOBJ = tclmdat_gds.o \
+telvdat_gds.o tsoldat_gds.o \
+atmdepdat_gds.o tatmdep_gds.o \
+nfertdat_gds.o tnfert_gds.o
+
+OBJ =  tprocessXML_gds.o
+
+ctem_gds_g++ : ${CLMOBJ} ${TEMOBJ} ${ELMNTOBJ} ${OBJ} ctem_gds.cpp 
+	${CXX} ${CFLAGS} -o ctem_gds_g++ ${CLMOBJ} ${TEMOBJ} ${ELMNTOBJ} ${OBJ} ctem_gds.cpp -lcurses
+
+atms_gds.o : atms_gds.cpp atms_gds.h
+	${CXX} ${CFLAGS} -c atms_gds.cpp
+
+humnact_gds.o : humnact_gds.cpp humnact_gds.h
+	${CXX} ${CFLAGS} -c humnact_gds.cpp
+
+tclm_gds.o : tclm_gds.cpp tclm_gds.h
+	${CXX} ${CFLAGS} -c tclm_gds.cpp
+
+tclmdat_gds.o : tclmdat_gds.cpp tclmdat_gds.h
+	${CXX} ${CFLAGS} -c tclmdat_gds.cpp
+
+telvdat_gds.o : telvdat_gds.cpp telvdat_gds.h
+	${CXX} ${CFLAGS} -c telvdat_gds.cpp
+
+tmcrb_gds.o : tmcrb_gds.cpp tmcrb_gds.h
+	${CXX} ${CFLAGS} -c tmcrb_gds.cpp
+
+tprocessXML_gds.o : tprocessXML_gds.cpp tprocessXML_gds.h
+	${CXX} ${CFLAGS} -c tprocessXML_gds.cpp
+
+tsoil_gds.o : tsoil_gds.cpp tsoil_gds.h
+	${CXX} ${CFLAGS} -c tsoil_gds.cpp
+
+tsoldat_gds.o : tsoldat_gds.cpp tsoldat_gds.h
+	${CXX} ${CFLAGS} -c tsoldat_gds.cpp
+
+ttem_gds.o : ttem_gds.cpp ttem_gds.h
+	${CXX} ${CFLAGS} -c ttem_gds.cpp
+
+tveg_gds.o : tveg_gds.cpp tveg_gds.h
+	${CXX} ${CFLAGS} -c tveg_gds.cpp
+	
+penmon_gds.o : penmon_gds.cpp penmon_gds.h
+	${CXX} ${CFLAGS} -c penmon_gds.cpp
+
+atmdepdat_gds.o : atmdepdat_gds.cpp atmdepdat_gds.h
+	${CXX} ${CFLAGS} -c atmdepdat_gds.cpp
+
+tatmdep_gds.o : tatmdep_gds.cpp tatmdep_gds.h
+	${CXX} ${CFLAGS} -c tatmdep_gds.cpp
+
+nfertdat_gds.o : nfertdat_gds.cpp nfertdat_gds.h
+	${CXX} ${CFLAGS} -c nfertdat_gds.cpp
+
+tnfert_gds.o : tnfert_gds.cpp tnfert_gds.h
+	${CXX} ${CFLAGS} -c tnfert_gds.cpp

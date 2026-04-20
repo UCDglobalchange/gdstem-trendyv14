@@ -1,0 +1,1040 @@
+<?xml version = "1.0"?>
+
+<communityECD version = "4.5">
+  <temveg type = "1"
+    description = "Ice"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "2"
+    description = "Alpine Tundra/Polar Desert"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>2</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "3"
+    description = "Moist/Wet Tundra"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>3</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "4"
+    description = "Boreal Forest"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>4</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "5"
+    description = "Boreal Woodlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>2</numtype>  
+    <subtype1>3</subtype1>
+    <pcttype1>50.00</pcttype1>
+    <subtype2>4</subtype2>
+    <pcttype2>50.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "6"
+    description = "Forested Boreal Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>4</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "7"
+    description = "Non-forested Boreal Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>3</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "8"
+    description = "Temperate Coniferous Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>5</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "9"
+    description = "Temperate Deciduous Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>6</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "10"
+    description = "Mixed Temperate Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>2</numtype>  
+    <subtype1>5</subtype1>
+    <pcttype1>50.00</pcttype1>
+    <subtype2>6</subtype2>
+    <pcttype2>50.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "11"
+    description = "Temperate Broadleaved Evergreen Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>7</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "12"
+    description = "Temperate Savannas"
+    developedBy = "A. David McGuire"
+    updated = "19931114">
+    <numtype>2</numtype>  
+    <subtype1>6</subtype1>
+    <pcttype1>50.00</pcttype1>
+    <subtype2>8</subtype2>
+    <pcttype2>50.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "13"
+    description = "Temperate Forested Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>6</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "14"
+    description = "Temperate Non-forested Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "15"
+    description = "Temperate Forested Floodplains"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>6</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "16"
+    description = "Temperate Non-forested Floodplain"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "17"
+    description = "Salt Marsh"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "18"
+    description = "Tidal Freshwater Marshes"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "19"
+    description = "Short Grasslands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>8</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "20"
+    description = "Tall Grasslands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "21"
+    description = "Mediterranean Shrublands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>10</subtype1>
+    <pcttype1>100.0</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "22"
+    description = "Arid Shrublands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>11</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "23"
+    description = "Xeromorphic Forests and Woodlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>12</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "24"
+    description = "Tropical Evergreen Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>13</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "25"
+    description = "Tropical Deciduous Forests"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>14</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "26"
+    description = "Tropical Savannas"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>2</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>50.00</pcttype1>
+    <subtype2>14</subtype2>
+    <pcttype2>50.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "27"
+    description = "Wet Savannas"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>2</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>50.00</pcttype1>
+    <subtype2>13</subtype2>
+    <pcttype2>50.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "28"
+    description = "Tropical Forested Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>13</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "29"
+    description = "Tropical Non-forested Wetlands"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "30"
+    description = "Tropical Forested Floodplains"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>14</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "31"
+    description = "Tropical Non-forested Floodplains"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>9</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "32"
+    description = "Mangroves"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>13</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "33"
+    description = "Deserts"
+    developedBy = "A. David McGuire"
+    updated = "19931111">
+    <numtype>1</numtype>  
+    <subtype1>11</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <submuntype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "34"
+    description = "Reserved1"
+    developedBy = "A. David McGuire"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "35"
+    description = "Reserved2"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "36"
+    description = "Reserved3"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "37"
+    description = "Reserved4"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "38"
+    description = "Reserved5"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "39"
+    description = "Reserved6"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "40"
+    description = "Urban with Boreal Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>3</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "41"
+    description = "Urban with Temperate Coniferous Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>5</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "42"
+    description = "Urban with Temperate Deciduous Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>6</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "43"
+    description = "Urban with Temperate Broadleaved Evergreen Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>7</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "44"
+    description = "Urban with Xeromorphic Forest and Woodland trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>12</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "45"
+    description = "Urban with Tropical Evergreen Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>13</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "46"
+    description = "Urban with Tropical Deciduous Forest trees"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>55.00</pcttype1>
+    <subtype2>16</subtype2>
+    <pcttype2>25.00</pcttype2>
+    <subtype3>14</subtype3>
+    <pcttype3>20.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "47"
+    description = "Impervious Surfaces"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>15</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "48"
+    description = "Turf Lawn"
+    developedBy = "TWC/BSF"
+    updated = "20090121">
+    <numtype>1</numtype>  
+    <subtype1>16</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "49"
+    description = "Reserved7"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "50"
+    description = "C3 annual Crops"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>18</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "51"
+    description = "C4 annual Crops"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>18</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "52"
+    description = "Perennial Crops"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>18</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "53"
+    description = "Soybean"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>17</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "54"
+    description = "Maize"
+    developedBy = "BSF/EM"
+    updated = "20250420">
+    <numtype>1</numtype>  
+    <subtype1>18</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "55"
+    description = "Switchgrass"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype> 
+    <subtype1>19</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "56"
+    description = "Vegetable Farm"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>18</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "57"
+    description = "Reserved8"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "58"
+    description = "Reserved9"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "59"
+    description = "Reserved10"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>1</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+
+  <temveg type = "60"
+    description = "Pasture"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>  
+    <subtype1>21</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+ </temveg>
+
+  <temveg type = "61"
+    description = "Moist Pasture"
+    developedBy = "David W. Kicklighter"
+    updated = "20020331">
+    <numtype>1</numtype>
+    <subtype1>22</subtype1>
+    <pcttype1>100.00</pcttype1>
+    <subtype2>-99</subtype2>
+    <pcttype2>0.00</pcttype2>
+    <subtype3>-99</subtype3>
+    <pcttype3>0.00</pcttype3>
+    <subtype4>-99</subtype4>
+    <pcttype4>0.00</pcttype4>
+    <subtype5>-99</subtype5>
+    <pcttype5>0.00</pcttype5>
+  </temveg>
+</communityECD>

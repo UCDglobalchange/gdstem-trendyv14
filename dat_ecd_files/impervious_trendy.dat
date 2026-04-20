@@ -1,0 +1,49 @@
+<?xml version = "1.0"?>
+
+<siteECD version = "4.5" 
+  site = "Chicago suburb"
+  longitude = "-72.5"
+  latitude = "42.5"
+  developedBy = "BSF "
+  updated = "20150828">
+
+  <community type = "15"
+    description = "Impervious Surface">
+  
+    <leafcb>00.0</leafcb>
+    <sapwoodcb>0.0</sapwoodcb>
+    <heartwoodcb>0.0</heartwoodcb>
+    <rootcb>0.0</rootcb>
+    <seedcb>0.0</seedcb>
+    <labilecb>0.0</labilecb>
+    <leafnb>0.0</leafnb>
+    <sapwoodnb>0.0</sapwoodnb>
+    <heartwoodnb>0.0</heartwoodnb>
+    <rootnb>0.0</rootnb>
+    <seednb>0.0</seednb>
+    <labilenb>0.0</labilenb>
+    <solcb>0.0</solcb>
+    <solnb>0.0</solnb>
+    <avlnb>0.0</avlnb>
+
+    <vegcmax1b>0.0</vegcmax1b>
+    <vegtauleaf>1.0</vegtauleaf>
+    <vegtausapwood>1.0</vegtausapwood>
+    <vegtauheartwood>1.0</vegtauheartwood>
+    <vegtauroot>2.0</vegtauroot>
+    <vegtauseed>2.0</vegtauseed>
+    <vegkra>0.0</vegkra>
+    <microbekdb>0.0</microbekdb>
+    <microbelcclnc>0.0</microbelcclnc>
+    <microbepropftos>0.0</microbepropftos>
+    <vegnmax1b>0.0</vegnmax1b>
+    <microbenupb>0.0</microbenupb>
+    <soilnloss>0.0</soilnloss>
+    <soildenitr>0.0</soildenitr>
+    <microbecnsoil>0.0</microbecnsoil>
+    <vegcnltr>1.0</vegcnltr>
+    <o3para>0.0</o3para>
+    <o3parb>0.0</o3parb>
+    <o3parc>0.0</o3parc>
+  </community>
+</siteECD>

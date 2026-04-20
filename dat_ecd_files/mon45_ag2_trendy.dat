@@ -1,0 +1,49 @@
+<?xml version = "1.0"?>
+
+<siteECD version = "4.5" 
+  site = "Pawnee, Colorado USA"
+  longitude = "-105.0"
+  latitude = "40.5"
+  developedBy = "TWC/BSF/DWK"
+  updated = "20080821">
+
+  <community type = "21"
+    description = "Dry Pasture">
+  
+    <leafcb>100.0</leafcb>
+    <sapwoodcb>0.0</sapwoodcb>
+    <heartwoodcb>0.0</heartwoodcb>
+    <rootcb>100.0</rootcb>
+    <seedcb>0.0</seedcb>
+    <labilecb>100.0</labilecb>
+    <leafnb>5.0</leafnb>
+    <sapwoodnb>0.0</sapwoodnb>
+    <heartwoodnb>0.0</heartwoodnb>
+    <rootnb>5.0</rootnb>
+    <seednb>0.0</seednb>
+    <labilenb>5.0</labilenb>
+    <solcb>3436.0</solcb>
+    <solnb>309.0</solnb>
+    <avlnb>2.00</avlnb>
+
+    <vegcmax1b>57.0</vegcmax1b>
+    <vegtauleaf>0.5</vegtauleaf>
+    <vegtausapwood>0.5</vegtausapwood>
+    <vegtauheartwood>0.5</vegtauheartwood>
+    <vegtauroot>0.5</vegtauroot>
+    <vegtauseed>0.5</vegtauseed>
+    <vegkra>0.3</vegkra>
+    <microbekdb>0.0045</microbekdb>
+    <microbelcclnc>57.1</microbelcclnc>
+    <microbepropftos>0.2000</microbepropftos>
+    <vegnmax1b>10000.0</vegnmax1b>
+    <microbenupb>35.0</microbenupb>
+    <soilnloss>1.0</soilnloss>
+    <soildenitr>0.0</soildenitr>
+    <microbecnsoil>11.12</microbecnsoil>
+    <vegcnltr>75.0</vegcnltr>
+    <o3para>3.9</o3para>
+    <o3parb>2.0</o3parb>
+    <o3parc>0.0402712</o3parc>
+  </community>
+</siteECD>
