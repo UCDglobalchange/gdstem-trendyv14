@@ -1,0 +1,53 @@
+#!/bin/bash -l
+  
+# setting name of job
+#SBATCH -J gdstem-run-S0-region-1
+
+# setting standard error output
+#SBATCH -e slurm/sterror_%j.txt
+
+# setting standard output
+#SBATCH -o slurm/stdoutput_%j.txt
+
+# setting medium priority
+#SBATCH -p high2
+
+# Request ! CPUs and 128 GB of RAM from 1 node:
+##SBATCH --nodes=1
+#SBATCH --mem=6G
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --exclude=cpu-3-62,cpu-3-66
+
+# setting the max time
+#SBATCH -t 72:00:00
+
+# mail alerts at beginning and end of job
+##SBATCH --mail-type=FAIL
+##SBATCH --mail-type=FAIL
+
+# send mail here
+##SBATCH --mail-user=emonier@ucdavis.edu
+
+# run one thread for each one the user asks the queue for
+# hostname is just for debugging
+set -x
+# enforce the use of submit.sh
+if [[ -z $SLURM_ARRAY_TASK_ID ]]; then
+  echo "error: this job must be submitted in a job array with submit.sh"
+  exit 1
+fi
+# ensure we received the argument file
+if [[ -z $_JOB_ARRAY_INDEX ]]; then 
+  echo "error: failed to get the index. did you use submit.sh?"
+  exit 1
+fi
+# ensure we received the command
+if [[ -z $_JOB_ARRAY_COMMAND ]]; then 
+  echo "error: failed to get the command. did you use submit.sh?"
+  exit 1
+fi
+# lookup arguments
+ARGS_THIS=$(sed $SLURM_ARRAY_TASK_ID'q;d' $_JOB_ARRAY_INDEX)
+# join the command with the specific arguments from our iterator over the index
+srun bash -c "\"$_JOB_ARRAY_COMMAND\" < $ARGS_THIS"

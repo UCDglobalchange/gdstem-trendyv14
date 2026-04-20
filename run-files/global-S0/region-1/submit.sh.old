@@ -1,0 +1,35 @@
+#!/bin/bash
+# submit.sh is a helper script for submitting a job array
+# USAGE:
+#   prepare an arguments.txt file with arguments
+#   set the RUNNER below to a command that accepts arguments
+#   your JOBFILE should set 
+
+# generate an error on sbatch so this script runs with bash only
+#SBATCH --partition=DO_NOT_SUBMIT_WITH_SBATCH_USE_BASH_INSTEAD
+
+# settings
+RUNNER="/home/emonier/gdstem/gdstem-source-code/xtem_gds_gofile_g++"
+ARGFILE="arguments.txt"
+#JOBFILE="job.sh"
+
+# enforce no blank lines
+nlines_nonblank=$(cat $ARGFILE | grep . | wc | awk '{print $1}')
+nlines=$(cat $ARGFILE | wc | awk '{print $1}')
+if (( nlines_nonblank != nlines )); then 
+  echo "error: you have blank lines in $ARGFILE"
+  echo "hint: fix this via: \"sed -i '/^$/d' $ARGFILE\""
+  exit 1
+fi
+# make sure the files exists
+if [[ ! -f $ARGFILE ]]; then
+  echo "error: missing the arguments file: $ARGFILE"
+  exit 1
+fi
+
+# export variables required by job.sh
+export _JOB_ARRAY_INDEX=$ARGFILE
+export _JOB_ARRAY_COMMAND=$RUNNER
+
+# submit the job
+sbatch --array=1-$nlines sol-ex.sh

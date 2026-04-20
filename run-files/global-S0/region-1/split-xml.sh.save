@@ -1,0 +1,37 @@
+#!/bin/bash
+
+###this program makes the input xml files from the parallel version of TEM
+###based on a parallel template xml file
+###that will be submitted as a slurm array job
+# Assign the number of lines in the file to the variable 'total_rows'
+total_rows=$(wc -l /group/moniergrp/TRENDY/input-files/region-input/S0/region-1/cruigbpstxtlf.glb | awk '{print $1}')
+
+initgrid=0 #gridcell to start with 
+numjobs=10 #number of tem chunks
+#number of grid cells per chunk, which is calculated by taking the round up of total rows / chunks
+gridsize=$(echo "scale=0; ($total_rows + $numjobs - 1) / $numjobs" | bc)
+echo "Total rows: $total_rows"
+echo "Rows per chunk: $gridsize"
+
+template="parallel-template.xml" #name and location of the template parallel file
+array_arguments="arguments.txt" #name of the text file with all the array job arguments
+xml_file_path="xml-files/" #location of the xml input files for tem
+xml_tem_input_path="xml-inputs/" #location of the text files that have the xml file path
+file_prefix="xml-file" #prefix of the text file that has the xml file name
+rm -f $array_arguments
+touch $array_arguments
+
+for ((i=1;i<=$numjobs;i++))
+do
+        infile="$xml_file_path$(echo $template | sed 's/template/'$initgrid'/g')"
+        sed -e 's/GRIDSIZE/'$gridsize'/g' -e 's/INITGRID/'$initgrid'/g' ${template} > "${infile}"
+        new_filename="$xml_tem_input_path$file_prefix${i}.txt"
+        touch $new_filename
+        echo $new_filename
+	echo "$infile" > $new_filename
+	echo "< $new_filename" >> "$array_arguments"
+    
+    initgrid=$[$initgrid + $gridsize]
+
+done
+

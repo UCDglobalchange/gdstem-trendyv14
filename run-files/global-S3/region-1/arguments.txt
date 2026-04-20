@@ -1,0 +1,10 @@
+< xml-inputs/xml-file1.txt
+< xml-inputs/xml-file2.txt
+< xml-inputs/xml-file3.txt
+< xml-inputs/xml-file4.txt
+< xml-inputs/xml-file5.txt
+< xml-inputs/xml-file6.txt
+< xml-inputs/xml-file7.txt
+< xml-inputs/xml-file8.txt
+< xml-inputs/xml-file9.txt
+< xml-inputs/xml-file10.txt

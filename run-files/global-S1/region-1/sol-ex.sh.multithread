@@ -1,0 +1,92 @@
+#!/bin/bash
+#SBATCH -J gdstem-run-S1-region-1
+#SBATCH -e slurm/sterror_%j.txt
+#SBATCH -o slurm/stdoutput_%j.txt
+#SBATCH -p med2
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=6G
+#SBATCH -t 24:00:00
+#SBATCH --exclude=cpu-3-[50-69],cpu-4-[68-93]
+
+set -euo pipefail
+set -x
+
+# ---- safety ----
+[[ -n ${SLURM_ARRAY_TASK_ID-} ]] || { echo "submit via submit.sh (array required)"; exit 1; }
+[[ -n ${_JOB_ARRAY_INDEX-}    ]] || { echo "missing _JOB_ARRAY_INDEX"; exit 1; }
+[[ -n ${_JOB_ARRAY_COMMAND-}  ]] || { echo "missing _JOB_ARRAY_COMMAND"; exit 1; }
+[[ -n ${_JOB_ARRAY_NLINES-}   ]] || { echo "missing _JOB_ARRAY_NLINES"; exit 1; }
+
+ARGFILE="$_JOB_ARRAY_INDEX"
+TOTAL_LINES="${_JOB_ARRAY_NLINES}"
+CMD="$_JOB_ARRAY_COMMAND"
+
+mkdir -p slurm
+TASK_TAG="${SLURM_JOB_ID}-${SLURM_ARRAY_TASK_ID}"
+DIAG_DIR="slurm/gdstem_affinity_${TASK_TAG}"
+mkdir -p "$DIAG_DIR"
+
+export ARGFILE TOTAL_LINES CMD DIAG_DIR  # passed into srun env
+
+echo "Launching srun..."
+srun -n 2 -c 1 --mpi=none bash -c '
+  set -euo pipefail
+  SLOT=${SLURM_LOCALID:-0}   # 0 or 1
+  BASE=$(( SLURM_ARRAY_TASK_ID*2 - 1 ))
+  if [[ "$SLOT" -eq 0 ]]; then LINE_NO="$BASE"; SLOTNUM=1; else LINE_NO=$(( BASE + 1 )); SLOTNUM=2; fi
+
+  # Handle odd last task
+  if (( LINE_NO > TOTAL_LINES )); then
+    echo "Slot ${SLOTNUM}: no work (line ${LINE_NO} > ${TOTAL_LINES})."
+    exit 0
+  fi
+
+  NAMELIST=$(sed -n "${LINE_NO}p" "$ARGFILE")
+  if [[ -z "$NAMELIST" ]]; then
+    echo "Slot ${SLOTNUM}: empty line at ${LINE_NO}, skipping."
+    exit 0
+  fi
+
+  OUTFILE="${DIAG_DIR}/affinity-slot${SLOTNUM}.txt"
+
+  AFF_LIST=$(grep -m1 Cpus_allowed_list /proc/self/status | awk "{print \$2}")
+  CPU_ID=""
+  if command -v taskset >/dev/null 2>&1; then
+    CPU_ID=$(taskset -pc $$ 2>/dev/null | awk -F": " "{print \$2}" | awk -F"," "{print \$1}")
+  fi
+  if [[ -z "$CPU_ID" ]]; then
+    CPU_ID=$(echo "$AFF_LIST" | awk -F"," "{print \$1}" | awk -F"-" "{print \$1}")
+  fi
+
+  CORE_ID=""; SOCKET_ID=""
+  [[ -n "$CPU_ID" && -r /sys/devices/system/cpu/cpu${CPU_ID}/topology/core_id ]] && CORE_ID=$(cat /sys/devices/system/cpu/cpu${CPU_ID}/topology/core_id 2>/dev/null || true)
+  [[ -n "$CPU_ID" && -r /sys/devices/system/cpu/cpu${CPU_ID}/topology/physical_package_id ]] && SOCKET_ID=$(cat /sys/devices/system/cpu/cpu${CPU_ID}/topology/physical_package_id 2>/dev/null || true)
+  if { [[ -z "$CORE_ID" ]] || [[ -z "$SOCKET_ID" ]]; } && command -v lscpu >/dev/null 2>&1; then
+    read -r _CPU _CORE _SOCK < <(lscpu -e=CPU,CORE,SOCKET | awk -v id="$CPU_ID" "NR>1 && \$1==id {print \$1, \$2, \$3; exit}")
+    [[ -n "${_CORE:-}"  ]] && CORE_ID="$_CORE"
+    [[ -n "${_SOCK:-}"  ]] && SOCKET_ID="$_SOCK"
+  fi
+
+  {
+    echo "[$(date)] Host: $(hostname)"
+    echo "Job: ${SLURM_JOB_ID}, Array: ${SLURM_ARRAY_TASK_ID}, Step: ${SLURM_STEP_ID}"
+    echo "Slot=${SLOTNUM}, LINE_NO=${LINE_NO}, NAMELIST=${NAMELIST}"
+    echo "Cpus_allowed_list: ${AFF_LIST}"
+    command -v taskset >/dev/null 2>&1 && taskset -pc $$ || true
+    echo "Resolved CPU_ID=${CPU_ID:-NA} core_id=${CORE_ID:-NA} socket=${SOCKET_ID:-NA}"
+    echo "Running: ${CMD} < ${NAMELIST}"
+  } | tee "$OUTFILE"
+
+  exec "${CMD}" < "${NAMELIST}"
+' || { echo "srun failed with exit $?" >&2; exit 1; }
+
+echo "=== Affinity summary for task ${TASK_TAG} ==="
+ls -l "$DIAG_DIR" || true
+for f in "$DIAG_DIR"/affinity-slot*.txt; do
+  [[ -f "$f" ]] || continue
+  echo "--- $(basename "$f") ---"
+  cat "$f"
+done
+
