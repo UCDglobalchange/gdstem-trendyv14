@@ -668,7 +668,7 @@
     description = "Urban with Boreal Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -685,7 +685,7 @@
     description = "Urban with Temperate Coniferous Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -702,7 +702,7 @@
     description = "Urban with Temperate Deciduous Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -719,7 +719,7 @@
     description = "Urban with Temperate Broadleaved Evergreen Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -736,7 +736,7 @@
     description = "Urban with Xeromorphic Forest and Woodland trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -753,7 +753,7 @@
     description = "Urban with Tropical Evergreen Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
@@ -770,7 +770,7 @@
     description = "Urban with Tropical Deciduous Forest trees"
     developedBy = "BSF/EM"
     updated = "20250420">
-    <numtype>1</numtype>  
+    <numtype>3</numtype>  
     <subtype1>15</subtype1>
     <pcttype1>55.00</pcttype1>
     <subtype2>16</subtype2>
